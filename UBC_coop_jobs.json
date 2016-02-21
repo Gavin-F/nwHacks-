@@ -1,1 +1,257 @@
-[{"Job Title":"S16 Information Technology Assistant","Employer":"Bamfield Marine Sciences Centre","Location":"Bamfield, BC"},{"Job Title":"Jr. C Programmers (CARD)","Employer":"Fortinet Inc.","Location":"Burnaby"},{"Job Title":"Associate Developer (Software Quality Assurance)","Employer":"Teradici","Location":"Burnaby, BC"},{"Job Title":"Junior Software Developer","Employer":"Navigate Surgical Technologies","Location":"Vancouver"},{"Job Title":"Associate Developer (Software Quality Assurance)","Employer":"Teradici","Location":"Burnaby, BC"},{"Job Title":"Co-op - Provincial Lines - Computer Science (starting May 2016)","Employer":"Hydro One Networks Inc.","Location":"Barrie, ON, CA"},{"Job Title":"Internship - Transmission Engineering - Computer Science (starting May 2016)","Employer":"Hydro One Networks Inc.","Location":"Toronto, ON, CA"},{"Job Title":"Internship - Network Connections - Engineering/Business/Economics (starting May 2016)","Employer":"Hydro One Networks Inc.","Location":"Toronto, Ontario (CA-ON)"},{"Job Title":"Internship - AMI Network Services - Engineering (starting May 2016)","Employer":"Hydro One Networks Inc.","Location":"Mississauga, Ontario (CA-ON)"},{"Job Title":"Summer 2016 Software Engineer Intern","Employer":"Whitepages","Location":"Seattle, WA"},{"Job Title":"Software Engineering Intern","Employer":"EnerNOC (formally Pulse Energy)","Location":"Vancouver, BC"},{"Job Title":"Summer Trainee Technical (Process Control Systems - Network Services) Job ID #: 2212457 X","Employer":"City of Toronto","Location":"Toronto, Ontario"},{"Job Title":"Summer Trainee Technical (Integrated Technology - Application Development) (Job ID # 2212509 X)","Employer":"City of Toronto","Location":"Toronto, Ontario"},{"Job Title":"Summer Student Employment Program","Employer":"NAV Canada","Location":"Various locations across Canada"},{"Job Title":"City of Ottawa 2016 Summer Student Employment Program","Employer":"City of Ottawa","Location":"Ottawa, ON"},{"Job Title":"Google TensorFlow","Employer":"Vaisala (formerly 3Tier)","Location":"Louisville, CO"},{"Job Title":"Software Engineer - New Graduate","Employer":"Whitepages","Location":"Seattle, WA"},{"Job Title":"Engineering and Field Programs Internship Student (Reference Code: 19581)","Employer":"TransCanada PipeLines Ltd.","Location":"Calgary, AB"},{"Job Title":"Computer Science Co-op Student","Employer":"Rockland Scientific International Inc.","Location":"Victoria, BC"},{"Job Title":"Applications (of quantum annealing) Group Co-op Position","Employer":"D-Wave Systems Inc","Location":"Burnaby, BC"},{"Job Title":"IT Assistant","Employer":"Glotman & Simpson Consulting Engineers","Location":"Vancouver, BC"},{"Job Title":"Developer In Test","Employer":"Mojio","Location":"Vancouver, BC"},{"Job Title":"Titles Research and GIS Technician (co-op Level 1)","Employer":"BC Ministry of Energy and Mines","Location":"Vancouver, BC"},{"Job Title":"Co-op Student (Android/iOS/server)","Employer":"eTreatMD","Location":"Vancouver, BC"},{"Job Title":"Client Support Technician","Employer":"BC Cancer Agency","Location":"Vancouver, BC"},{"Job Title":"W16 Software Developer/Tester 98257","Employer":"BAM Software and Services","Location":"Vancouver, BC"},{"Job Title":"QA Analyst Co-op","Employer":"Allocadia","Location":"Vancouver, BC"},{"Job Title":"Coulson Ice Blast Electrical Engineering Co-Op","Employer":"Coulson Group","Location":"Port Alberni, Vancouver Island"},{"Job Title":"Application Engineer Co-op","Employer":"LitePoint","Location":"California - LitePoint - Sunnyvale"},{"Job Title":"Wireless Systems Engineering Co-op/Intern","Employer":"LitePoint","Location":"Illinois - LitePoint - Arlington Heights IL"},{"Job Title":"RF System Application Engineer Co-op","Employer":"LitePoint","Location":"California - LitePoint - Sunnyvale"},{"Job Title":"RF Application Engineer Co-op","Employer":"LitePoint","Location":"California - LitePoint - Sunnyvale"},{"Job Title":"Quality Assurance Automation Engineer Co-op","Employer":"LitePoint","Location":"California - LitePoint - Sunnyvale"},{"Job Title":"System Test Co-op","Employer":"LitePoint","Location":"California - LitePoint - Sunnyvale"},{"Job Title":"Research Assistant (Data Science)","Employer":"Rick Hansen Institute","Location":"Vancouver, BC"},{"Job Title":"Junior Software Developer, Mortgage Analytics Group (Co-op Student)","Employer":"CMLS Financial","Location":"Vancouver, BC"},{"Job Title":"Web Application Programmer, Summer Internship","Employer":"Dun & Bradstreet","Location":"Mississauga, ON"},{"Job Title":"Software Engineer, Packet Networking R&D - Intern/Co-op (R004182)","Employer":"Ciena Corporation","Location":"Ottawa, ON"},{"Job Title":"IT support assistant","Employer":"UBC, Dept. of Microbiology and Immunology","Location":"UBC"},{"Job Title":"Co-op Student - Web Design, Data Base Development and Web Mapping","Employer":"Environment and Climate Change Canada","Location":"Vancouver, BC"},{"Job Title":"S16 Oceanographic Data Analyst","Employer":"UBC, Dept. of Earth and Ocean Science","Location":"Vancouver, BC"},{"Job Title":"Odyssey / TSDN Developer","Employer":"Alcatel-Lucent","Location":"Ottawa, ON"},{"Job Title":"Software Development Co-op","Employer":"Vision Critical IT","Location":"Toronto"},{"Job Title":"Software Development (Mobile App or Backend/Framework)","Employer":"NextConn Networks, Inc.","Location":"Vancouver, BC"},{"Job Title":"Software Engineer Internship","Employer":"Axiom Zen","Location":"Vancouver"},{"Job Title":"Engineering Student Assistant - Electrical","Employer":"Coast Mountain Bus Company","Location":"Burnaby"},{"Job Title":"Software Developer","Employer":"PDFTron Systems","Location":"Vancouver"},{"Job Title":"Cumul8 Co-op Front End Developer","Employer":"Eight Solutions","Location":"Vancouver, BC"},{"Job Title":"Software Developer - Simulator","Employer":"Kardium Inc.","Location":"Burnaby, BC"},{"Job Title":"UX Designer","Employer":"Canadian Tire","Location":"Kitchener, Ontario"},{"Job Title":"S16 Intermediate to Senior Co-op Software Developer","Employer":"Here","Location":"Burnaby, BC"}]
+[
+  {
+    "Job Title": "S16 Information Technology Assistant",
+    "Employer": "Bamfield Marine Sciences Centre",
+    "Location": "Bamfield, BC"
+  },
+  {
+    "Job Title": "Jr. C Programmers (CARD)",
+    "Employer": "Fortinet Inc.",
+    "Location": "Burnaby"
+  },
+  {
+    "Job Title": "Associate Developer (Software Quality Assurance)",
+    "Employer": "Teradici",
+    "Location": "Burnaby, BC"
+  },
+  {
+    "Job Title": "Junior Software Developer",
+    "Employer": "Navigate Surgical Technologies",
+    "Location": "Vancouver"
+  },
+  {
+    "Job Title": "Associate Developer (Software Quality Assurance)",
+    "Employer": "Teradici",
+    "Location": "Burnaby, BC"
+  },
+  {
+    "Job Title": "Co-op - Provincial Lines - Computer Science (starting May 2016)",
+    "Employer": "Hydro One Networks Inc.",
+    "Location": "Barrie, ON, CA"
+  },
+  {
+    "Job Title": "Internship - Transmission Engineering - Computer Science (starting May 2016)",
+    "Employer": "Hydro One Networks Inc.",
+    "Location": "Toronto, ON, CA"
+  },
+  {
+    "Job Title": "Internship - Network Connections - Engineering\/Business\/Economics (starting May 2016)",
+    "Employer": "Hydro One Networks Inc.",
+    "Location": "Toronto, Ontario (CA-ON)"
+  },
+  {
+    "Job Title": "Internship - AMI Network Services - Engineering (starting May 2016)",
+    "Employer": "Hydro One Networks Inc.",
+    "Location": "Mississauga, Ontario (CA-ON)"
+  },
+  {
+    "Job Title": "Summer 2016 Software Engineer Intern",
+    "Employer": "Whitepages",
+    "Location": "Seattle, WA"
+  },
+  {
+    "Job Title": "Software Engineering Intern",
+    "Employer": "EnerNOC (formally Pulse Energy)",
+    "Location": "Vancouver, BC"
+  },
+  {
+    "Job Title": "Summer Trainee Technical (Process Control Systems - Network Services) Job ID #: 2212457 X",
+    "Employer": "City of Toronto",
+    "Location": "Toronto, Ontario"
+  },
+  {
+    "Job Title": "Summer Trainee Technical (Integrated Technology - Application Development) (Job ID # 2212509 X)",
+    "Employer": "City of Toronto",
+    "Location": "Toronto, Ontario"
+  },
+  {
+    "Job Title": "Summer Student Employment Program",
+    "Employer": "NAV Canada",
+    "Location": "Various locations across Canada"
+  },
+  {
+    "Job Title": "City of Ottawa 2016 Summer Student Employment Program",
+    "Employer": "City of Ottawa",
+    "Location": "Ottawa, ON"
+  },
+  {
+    "Job Title": "Google TensorFlow",
+    "Employer": "Vaisala (formerly 3Tier)",
+    "Location": "Louisville, CO"
+  },
+  {
+    "Job Title": "Software Engineer - New Graduate",
+    "Employer": "Whitepages",
+    "Location": "Seattle, WA"
+  },
+  {
+    "Job Title": "Engineering and Field Programs Internship Student (Reference Code: 19581)",
+    "Employer": "TransCanada PipeLines Ltd.",
+    "Location": "Calgary, AB"
+  },
+  {
+    "Job Title": "Computer Science Co-op Student",
+    "Employer": "Rockland Scientific International Inc.",
+    "Location": "Victoria, BC"
+  },
+  {
+    "Job Title": "Applications (of quantum annealing) Group Co-op Position",
+    "Employer": "D-Wave Systems Inc",
+    "Location": "Burnaby, BC"
+  },
+  {
+    "Job Title": "IT Assistant",
+    "Employer": "Glotman & Simpson Consulting Engineers",
+    "Location": "Vancouver, BC"
+  },
+  {
+    "Job Title": "Developer In Test",
+    "Employer": "Mojio",
+    "Location": "Vancouver, BC"
+  },
+  {
+    "Job Title": "Titles Research and GIS Technician (co-op Level 1)",
+    "Employer": "BC Ministry of Energy and Mines",
+    "Location": "Vancouver, BC"
+  },
+  {
+    "Job Title": "Co-op Student (Android\/iOS\/server)",
+    "Employer": "eTreatMD",
+    "Location": "Vancouver, BC"
+  },
+  {
+    "Job Title": "Client Support Technician",
+    "Employer": "BC Cancer Agency",
+    "Location": "Vancouver, BC"
+  },
+  {
+    "Job Title": "W16 Software Developer\/Tester 98257",
+    "Employer": "BAM Software and Services",
+    "Location": "Vancouver, BC"
+  },
+  {
+    "Job Title": "QA Analyst Co-op",
+    "Employer": "Allocadia",
+    "Location": "Vancouver, BC"
+  },
+  {
+    "Job Title": "Coulson Ice Blast Electrical Engineering Co-Op",
+    "Employer": "Coulson Group",
+    "Location": "Port Alberni, Vancouver Island"
+  },
+  {
+    "Job Title": "Application Engineer Co-op",
+    "Employer": "LitePoint",
+    "Location": "California - LitePoint - Sunnyvale"
+  },
+  {
+    "Job Title": "Wireless Systems Engineering Co-op\/Intern",
+    "Employer": "LitePoint",
+    "Location": "Illinois - LitePoint - Arlington Heights IL"
+  },
+  {
+    "Job Title": "RF System Application Engineer Co-op",
+    "Employer": "LitePoint",
+    "Location": "California - LitePoint - Sunnyvale"
+  },
+  {
+    "Job Title": "RF Application Engineer Co-op",
+    "Employer": "LitePoint",
+    "Location": "California - LitePoint - Sunnyvale"
+  },
+  {
+    "Job Title": "Quality Assurance Automation Engineer Co-op",
+    "Employer": "LitePoint",
+    "Location": "California - LitePoint - Sunnyvale"
+  },
+  {
+    "Job Title": "System Test Co-op",
+    "Employer": "LitePoint",
+    "Location": "California - LitePoint - Sunnyvale"
+  },
+  {
+    "Job Title": "Research Assistant (Data Science)",
+    "Employer": "Rick Hansen Institute",
+    "Location": "Vancouver, BC"
+  },
+  {
+    "Job Title": "Junior Software Developer, Mortgage Analytics Group (Co-op Student)",
+    "Employer": "CMLS Financial",
+    "Location": "Vancouver, BC"
+  },
+  {
+    "Job Title": "Web Application Programmer, Summer Internship",
+    "Employer": "Dun & Bradstreet",
+    "Location": "Mississauga, ON"
+  },
+  {
+    "Job Title": "Software Engineer, Packet Networking R&D - Intern\/Co-op (R004182)",
+    "Employer": "Ciena Corporation",
+    "Location": "Ottawa, ON"
+  },
+  {
+    "Job Title": "IT support assistant",
+    "Employer": "UBC, Dept. of Microbiology and Immunology",
+    "Location": "UBC"
+  },
+  {
+    "Job Title": "Co-op Student - Web Design, Data Base Development and Web Mapping",
+    "Employer": "Environment and Climate Change Canada",
+    "Location": "Vancouver, BC"
+  },
+  {
+    "Job Title": "S16 Oceanographic Data Analyst",
+    "Employer": "UBC, Dept. of Earth and Ocean Science",
+    "Location": "Vancouver, BC"
+  },
+  {
+    "Job Title": "Odyssey \/ TSDN Developer",
+    "Employer": "Alcatel-Lucent",
+    "Location": "Ottawa, ON"
+  },
+  {
+    "Job Title": "Software Development Co-op",
+    "Employer": "Vision Critical IT",
+    "Location": "Toronto"
+  },
+  {
+    "Job Title": "Software Development (Mobile App or Backend\/Framework)",
+    "Employer": "NextConn Networks, Inc.",
+    "Location": "Vancouver, BC"
+  },
+  {
+    "Job Title": "Software Engineer Internship",
+    "Employer": "Axiom Zen",
+    "Location": "Vancouver"
+  },
+  {
+    "Job Title": "Engineering Student Assistant - Electrical",
+    "Employer": "Coast Mountain Bus Company",
+    "Location": "Burnaby"
+  },
+  {
+    "Job Title": "Software Developer",
+    "Employer": "PDFTron Systems",
+    "Location": "Vancouver"
+  },
+  {
+    "Job Title": "Cumul8 Co-op Front End Developer",
+    "Employer": "Eight Solutions",
+    "Location": "Vancouver, BC"
+  },
+  {
+    "Job Title": "Software Developer - Simulator",
+    "Employer": "Kardium Inc.",
+    "Location": "Burnaby, BC"
+  },
+  {
+    "Job Title": "UX Designer",
+    "Employer": "Canadian Tire",
+    "Location": "Kitchener, Ontario"
+  },
+  {
+    "Job Title": "S16 Intermediate to Senior Co-op Software Developer",
+    "Employer": "Here",
+    "Location": "Burnaby, BC"
+  }
+]
