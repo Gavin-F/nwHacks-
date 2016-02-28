@@ -1,16 +1,16 @@
 [
   {
-    "Job Title": "S16 Information Technology Assistant",
+    "Job Title": "Information Technology Assistant",
     "Employer": "Bamfield Marine Sciences Centre",
     "Location": "Bamfield, BC"
   },
   {
-    "Job Title": "Jr. C Programmers (CARD)",
+    "Job Title": "Jr. C Programmers",
     "Employer": "Fortinet Inc.",
     "Location": "Burnaby"
   },
   {
-    "Job Title": "Associate Developer (Software Quality Assurance)",
+    "Job Title": "Software Quality Assurance",
     "Employer": "Teradici",
     "Location": "Burnaby, BC"
   },
@@ -20,47 +20,47 @@
     "Location": "Vancouver"
   },
   {
-    "Job Title": "Associate Developer (Software Quality Assurance)",
+    "Job Title": "Software Quality Assurance",
     "Employer": "Teradici",
     "Location": "Burnaby, BC"
   },
   {
-    "Job Title": "Co-op - Provincial Lines - Computer Science (starting May 2016)",
+    "Job Title": "Co-op, Computer Science",
     "Employer": "Hydro One Networks Inc.",
     "Location": "Barrie, ON, CA"
   },
   {
-    "Job Title": "Internship - Transmission Engineering - Computer Science (starting May 2016)",
+    "Job Title": "Internship, Transmission Engineering",
     "Employer": "Hydro One Networks Inc.",
     "Location": "Toronto, ON, CA"
   },
   {
-    "Job Title": "Internship - Network Connections - Engineering\/Business\/Economics (starting May 2016)",
+    "Job Title": "Internship, Network Connections - Engineering\/Business\/Economics (starting May 2016)",
     "Employer": "Hydro One Networks Inc.",
     "Location": "Toronto, Ontario (CA-ON)"
   },
   {
-    "Job Title": "Internship - AMI Network Services - Engineering (starting May 2016)",
+    "Job Title": "Internship, AMI Network Services",
     "Employer": "Hydro One Networks Inc.",
     "Location": "Mississauga, Ontario (CA-ON)"
   },
   {
-    "Job Title": "Summer 2016 Software Engineer Intern",
+    "Job Title": "Software Engineer Intern",
     "Employer": "Whitepages",
     "Location": "Seattle, WA"
   },
   {
     "Job Title": "Software Engineering Intern",
-    "Employer": "EnerNOC (formally Pulse Energy)",
+    "Employer": "EnerNOC",
     "Location": "Vancouver, BC"
   },
   {
-    "Job Title": "Summer Trainee Technical (Process Control Systems - Network Services) Job ID #: 2212457 X",
+    "Job Title": "Summer Trainee Technical, Process Control Systems - Network Services",
     "Employer": "City of Toronto",
     "Location": "Toronto, Ontario"
   },
   {
-    "Job Title": "Summer Trainee Technical (Integrated Technology - Application Development) (Job ID # 2212509 X)",
+    "Job Title": "Summer Trainee Technical, Integrated Technology - Application Development",
     "Employer": "City of Toronto",
     "Location": "Toronto, Ontario"
   },
@@ -70,14 +70,9 @@
     "Location": "Various locations across Canada"
   },
   {
-    "Job Title": "City of Ottawa 2016 Summer Student Employment Program",
+    "Job Title": "Summer Student Employment Program",
     "Employer": "City of Ottawa",
     "Location": "Ottawa, ON"
-  },
-  {
-    "Job Title": "Google TensorFlow",
-    "Employer": "Vaisala (formerly 3Tier)",
-    "Location": "Louisville, CO"
   },
   {
     "Job Title": "Software Engineer - New Graduate",
@@ -85,7 +80,7 @@
     "Location": "Seattle, WA"
   },
   {
-    "Job Title": "Engineering and Field Programs Internship Student (Reference Code: 19581)",
+    "Job Title": "Engineering and Field Programs Internship Student",
     "Employer": "TransCanada PipeLines Ltd.",
     "Location": "Calgary, AB"
   },
@@ -95,7 +90,7 @@
     "Location": "Victoria, BC"
   },
   {
-    "Job Title": "Applications (of quantum annealing) Group Co-op Position",
+    "Job Title": "Applications of Quantum Annealing Group Co-op Position",
     "Employer": "D-Wave Systems Inc",
     "Location": "Burnaby, BC"
   },
@@ -110,7 +105,7 @@
     "Location": "Vancouver, BC"
   },
   {
-    "Job Title": "Titles Research and GIS Technician (co-op Level 1)",
+    "Job Title": "Titles Research and GIS Technician",
     "Employer": "BC Ministry of Energy and Mines",
     "Location": "Vancouver, BC"
   },
@@ -125,7 +120,7 @@
     "Location": "Vancouver, BC"
   },
   {
-    "Job Title": "W16 Software Developer\/Tester 98257",
+    "Job Title": "Software Developer\/Tester",
     "Employer": "BAM Software and Services",
     "Location": "Vancouver, BC"
   },
@@ -170,12 +165,12 @@
     "Location": "California - LitePoint - Sunnyvale"
   },
   {
-    "Job Title": "Research Assistant (Data Science)",
+    "Job Title": "Research Assistant, Data Science",
     "Employer": "Rick Hansen Institute",
     "Location": "Vancouver, BC"
   },
   {
-    "Job Title": "Junior Software Developer, Mortgage Analytics Group (Co-op Student)",
+    "Job Title": "Junior Software Developer, Mortgage Analytics Group Co-op Student",
     "Employer": "CMLS Financial",
     "Location": "Vancouver, BC"
   },
@@ -185,7 +180,7 @@
     "Location": "Mississauga, ON"
   },
   {
-    "Job Title": "Software Engineer, Packet Networking R&D - Intern\/Co-op (R004182)",
+    "Job Title": "Software Engineer, Packet Networking R&D - Intern\/Co-op",
     "Employer": "Ciena Corporation",
     "Location": "Ottawa, ON"
   },
@@ -200,7 +195,7 @@
     "Location": "Vancouver, BC"
   },
   {
-    "Job Title": "S16 Oceanographic Data Analyst",
+    "Job Title": "Oceanographic Data Analyst",
     "Employer": "UBC, Dept. of Earth and Ocean Science",
     "Location": "Vancouver, BC"
   },
@@ -215,7 +210,7 @@
     "Location": "Toronto"
   },
   {
-    "Job Title": "Software Development (Mobile App or Backend\/Framework)",
+    "Job Title": "Software Development - Mobile App or Backend\/Framework",
     "Employer": "NextConn Networks, Inc.",
     "Location": "Vancouver, BC"
   },
@@ -235,12 +230,12 @@
     "Location": "Vancouver"
   },
   {
-    "Job Title": "Cumul8 Co-op Front End Developer",
+    "Job Title": "Co-op Front End Developer",
     "Employer": "Eight Solutions",
     "Location": "Vancouver, BC"
   },
   {
-    "Job Title": "Software Developer - Simulator",
+    "Job Title": "Software Developer",
     "Employer": "Kardium Inc.",
     "Location": "Burnaby, BC"
   },
@@ -250,7 +245,7 @@
     "Location": "Kitchener, Ontario"
   },
   {
-    "Job Title": "S16 Intermediate to Senior Co-op Software Developer",
+    "Job Title": "Co-op Software Developer",
     "Employer": "Here",
     "Location": "Burnaby, BC"
   }
