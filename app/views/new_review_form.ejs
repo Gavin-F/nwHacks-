@@ -76,7 +76,7 @@ You can put stuff here if you want
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <li><a href="../../">Change School</a></li>
+            <li><a href="../">Change School</a></li>
             <li class="active"><a href="main">Jobs</a></li>
             <!--
             <li class="dropdown">
@@ -126,17 +126,17 @@ You can put stuff here if you want
 
     <div class="form-group">
       <label>Company Name</label>
-      <input name="companyName" class="form-control autocomplete" placeholder="Enter the company name" />
+      <input name="companyName" class="form-control autocomplete" placeholder="Enter the company name"/>
     </div>
     
     <div class="form-group">
       <label>Job Title</label>
-      <input name="jobTitle" class="form-control autocomplete2" placeholder="Enter the job title"/>
+      <input name="jobTitle" class="form-control autocomplete2" placeholder="Enter the job title" disabled/>
     </div>
 
      <div class="form-group">
       <label>Location</label>
-      <input name="location" class="form-control autocomplete3" placeholder="Enter the job location"/>
+      <input name="location" class="form-control autocomplete3" placeholder="Enter the job location" disabled/>
     </div>
 
     <div>
@@ -255,6 +255,18 @@ You can put stuff here if you want
       } 
     });
   });
+
+  console.log($('input[name=companyName]').val());
+
+  $('input[name=companyName]').on("Change", function() {
+    console.log($('input[name=companyName]').val());
+    $('input[name=jobTitle]').prop('disabled', !($(this).val()))
+  });
+
+  $('input[name=jobTitle]').change(function() {
+    $('input[name=location]').prop('disabled', !($(this).val()))
+  });
+
 
 
 </script>
