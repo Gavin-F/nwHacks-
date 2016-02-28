@@ -1,12 +1,21 @@
 var express = require("express");
 var router = express.Router();
-//var JobPost = require("../models/jobpost.js");
-//var UserReview = require("../models/userreview.js");
+var JobPost = require("../models/jobpost.js");
+var UserReview = require("../models/userreview.js");
 
 router.get("/jobtitles", function(req, res) {
     // Placeholder
-    var jobtitles = ["application developer", "software engineer", "financial analyst"];
-    res.json(jobtitles);
+    //var jobtitles = ["application developer", "software engineer", "financial analyst"];
+    //res.json(jobtitles);
+    JobPost.find({}, function(err, docs) {
+        var json_res = [];
+        for (var i=0; i<docs.length; i++) {
+            json_res.push(docs[i]["jobTitle"]);
+        }
+
+        res.json(json_res);
+    });
+
 });
 
 router.get("/companies", function(req, res){
