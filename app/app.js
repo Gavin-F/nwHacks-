@@ -45,7 +45,7 @@ app.all("/:uni/:fac/*", function(req, res, next) {
 
 app.use('/', routes);
 app.use("/main_redirect", main_redirect);
-app.use("/api", api);
+app.use("/*/*/api", api);
 app.use("/*/*/main", mainpage);
 app.use("/*/*/new_review_form", new_review_form);
 
