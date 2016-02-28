@@ -10,40 +10,83 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+
+
+
 </head>
-<body>
+<body background = "images/background.jpg">
 
 stuff and stuff
-<img src = "images/stickman.jpg">
-  <nav class="navbar navbar-default">
-  <div class="container-fluid">
+<img src = "images/stickman.png" width = "150px" height = "150px">
+YOU CAN PUT STUFF HERE IF YOU WANT
+<nav class="navbar navbar-default" role="navigation">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">NoCoopJob :(</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">NoCoopJob:(</a>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Schools
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">UBC</a></li>
-          <li><a href="#">UW</a></li>
-          <li><a href="#">UT</a></li> 
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Schools<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">UBC</a></li>
+                    <li><a href="#">UW</a></li>
+                    <li><a href="#">UT</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li class="divider"></li>                    
+                </ul>
+            </li>
+            <li><a href="#">Top Rated</a></li>
+            <li><a href="#">Most Recent</a></li>
+            
         </ul>
-      </li>
-      <li><a href="frame_b.html" target = "frame_a">Highest Rated</a></li> 
-      <li><a href="#">Most Recent</a></li> 
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-    
-  </div>
-</nav>
+        <div class="col-sm-3 col-md-3 pull-right">
+            <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="q">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>        
+    </div>
+</nav>  
 
-<iframe name = "frame_a" src = "frame_a.ejs">
-</iframe>
+<div align = center>
+
+<form class="navbar-form" role="search">
+    
+    <div class="form-group">
+      
+        <input type="text" class="form-control" placeholder="Search by School">
+    </div>
+    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+</form>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<form class="navbar-form" role="search">
+    
+    <div class="form-group">
+  
+        <input type="text" class="form-control" placeholder="Search by Faculty">
+    </div>
+    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+</form>
+
+</div>
 
 </body>
 </html>
