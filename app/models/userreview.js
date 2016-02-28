@@ -7,8 +7,11 @@ var reviewSchema = new Schema({
     careerDevelopmentRating: Number,
     cultureRating: Number,
     perksRating: Number,
-    salary: Number,
-    salaryGiven: Boolean
+    salary: Number
 });
+
+reviewSchema.methods.avgRating = function() {
+    return (this.cultureRating + this.perksRating + this.careerDevelopmentRating) / 3;
+};
 
 module.exports = mongoose.model("user_review", reviewSchema);

@@ -1,0 +1,49 @@
+var express = require("express");
+var router = express.Router();
+
+var bodyParser = require("body-parser");
+var urlencoded = bodyParser.urlencoded({extended: true});
+
+var JobPost = require("../models/jobpost.js");
+var UserReview = require("../models/userreview.js");
+
+router.post("/", function(req, urlencoded, res) {
+    console.log(req.uni);
+    console.log(req.fac);
+
+    var companyName = req.body.companyName;
+    var jobTitle = req.body.jobTitle;
+    var location = req.body.location;
+
+    var careerScore = req.body.career;
+    var cultureScore = req.body.culture;
+    var compensationScore = req.body.compensation;
+    var salary = req.body.salary;
+    var comments = req.body.comments;
+
+    var targetJobPost = JobPost.findOne({employer: companyName, jobTitle: jobTitle}, "_id", function(err, jobID) {
+        if (err) console.log(err);
+
+        if (jobID) {
+            var newUserReview = new UserReview({
+                jobPostID: jobID.toString(),
+                comment: comments,
+                careerDevelopmentRating: careerScore,
+                cultureRating: cultureScore,
+                perksRating: compensationScore,
+                salary: salary
+            });
+
+            newUserReview.save(function(err) {
+                if (err) console.log(err);
+
+                res.send("Review Added!")
+            });
+        }
+        else {
+            res.send("No such job.");
+        }
+    });
+});
+
+module.exports = router;
