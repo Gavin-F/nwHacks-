@@ -39,6 +39,16 @@ router.get("/faculties", function(req, res) {
     });
 });
 
+router.get("/all_postings", function(req, res) {
+    var target_uni = req.uni;
+    var target_fac = req.fac;
+    JobPost.find({university: target_uni, faculty: target_fac}, function(err, docs) {
+        if (err) console.log(err);
+
+        res.json(docs);
+    })
+});
+
 module.exports = router;
 
 // list of job title
