@@ -43,7 +43,7 @@
 
 
 </head>
-<body background = "images/background.jpg">
+<body background = "/images/background.jpg">
 <br>
 <br>
 <br>
@@ -52,7 +52,7 @@
 <div class = "mystyle">
 Stuff and stuff
 </div>
-<img src = "images/stickman.png" width = "150px" height = "150px">
+<img src = "/images/stickman.png" width = "150px" height = "150px">
 <div class = "mystyle">
 You can put stuff here if you want<br><br><br>
 </div>
@@ -117,12 +117,12 @@ You can put stuff here if you want<br><br><br>
 -->
 
 <div class="container">
-  <form>
+  <form method="POST" action="main_redirect">
     <div class="form-group">
       <div class="mystyle">
       <label>What school do you go to?</label>
       </div>
-      <input class="form-control autocomplete" placeholder="Enter a school" />
+      <input class="form-control autocomplete" placeholder="Enter a school" name="university"/>
     </div>
  
 
@@ -146,7 +146,7 @@ You can put stuff here if you want<br><br><br>
       <div class="mystyle">
       <label>What faculty are you in?</label>
       </div>
-      <input class="form-control autocomplete" placeholder="Enter a faculty" />
+      <input class="form-control autocomplete" placeholder="Enter a faculty" name="faculty"/>
     </div>
     <br>
     

@@ -10,7 +10,7 @@ var mongoose = require("mongoose");
 mongoose.connect("mongodb://admin:nwhacks@ds045684.mlab.com:45684/nwhacks");
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
+var main_redirect = require("./routes/main_redirect");
 var api = require("./routes/api");
 var mainpage = require("./routes/mainpage");
 var new_review_form = require("./routes/new_review_form");
@@ -22,6 +22,7 @@ var port = process.env.PORT || 3000;
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
@@ -30,11 +31,23 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// grab uni from url, attach to req, continue requesting
+app.all("/:uni/:fac/*", function(req, res, next) {
+  if (req.uni && req.fac) {
+    console.log("uni or fac alread in request");
+    next();
+  }
+
+  req.uni = req.params.uni;
+  req.fac = req.params.fac;
+  next();
+});
+
 app.use('/', routes);
-app.use('/users', users);
+app.use("/main_redirect", main_redirect);
 app.use("/api", api);
-app.use("/main", mainpage);
-app.use("/new_review_form", new_review_form);
+app.use("/*/*/main", mainpage);
+app.use("/*/*/new_review_form", new_review_form);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
