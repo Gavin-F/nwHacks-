@@ -5,7 +5,6 @@
 </title>
 
 
-
  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -13,6 +12,7 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
 
 <style>
 .navbar-form {
@@ -39,11 +39,11 @@
 
 
 </head>
-<body background = "images/background.jpg">
+<body background = "/images/background.jpg">
 <div class = "mystyle">
 Stuff and stuff
 </div>
-<img src = "images/stickman.png" width = "150px" height = "150px">
+<img src = "/images/stickman.png" width = "150px" height = "150px">
 <div class = "mystyle">
 You can put stuff here if you want
 </div>
@@ -95,7 +95,10 @@ You can put stuff here if you want
 
 
 <div class="container">
+  <h2 color="gray"> Rate your co-op experience </h2>
+  <br/>
   <form>
+
     <div class="form-group">
       <label>Company Name</label>
       <input class="form-control autocomplete" placeholder="Enter the company name" />
@@ -103,16 +106,16 @@ You can put stuff here if you want
     
     <div class="form-group">
       <label>Job Title</label>
-      <input class="form-control autocomplete2" placeholder="Enter the job title">
+      <input class="form-control autocomplete2" placeholder="Enter the job title"/>
     </div>
 
      <div class="form-group">
       <label>Location</label>
-      <input class="form-control autocomplete3" placeholder="Enter the job location">
+      <input class="form-control autocomplete3" placeholder="Enter the job location"/>
     </div>
 
     <div>
-      <label>Rating</label> <br/>
+      <label>Career Developement Rating</label> <br/>
       <small class="text-muted">Select from 1 (lowest) to 5 (highest)</small> <br/>
       <label class="radio-inline"><input type="radio" name="optradio">1</label>
       <label class="radio-inline"><input type="radio" name="optradio">2</label>
@@ -120,93 +123,89 @@ You can put stuff here if you want
       <label class="radio-inline"><input type="radio" name="optradio">4</label>
       <label class="radio-inline"><input type="radio" name="optradio">5</label>
     </div>
+
+    <div>
+      <label>Company Culture Rating</label> <br/>
+      <small class="text-muted">Select from 1 (lowest) to 5 (highest)</small> <br/>
+      <label class="radio-inline"><input type="radio" name="optradio">1</label>
+      <label class="radio-inline"><input type="radio" name="optradio">2</label>
+      <label class="radio-inline"><input type="radio" name="optradio">3</label>
+      <label class="radio-inline"><input type="radio" name="optradio">4</label>
+      <label class="radio-inline"><input type="radio" name="optradio">5</label>
+    </div>
+
+    <div>
+      <label>Compensation Rating</label> <br/>
+      <small class="text-muted">Select from 1 (lowest) to 5 (highest)</small> <br/>
+      <label class="radio-inline"><input type="radio" name="optradio">1</label>
+      <label class="radio-inline"><input type="radio" name="optradio">2</label>
+      <label class="radio-inline"><input type="radio" name="optradio">3</label>
+      <label class="radio-inline"><input type="radio" name="optradio">4</label>
+      <label class="radio-inline"><input type="radio" name="optradio">5</label>
+    </div>
+
     <br/>
+
+    <fieldset class="form-group">
+      <label for="exampleSelect1">Monthly Salary Range (CAD)</label>
+      <select class="form-control" id="exampleSelect1">
+        <option>Select below</option>
+        <option>1600 - 2400</option>
+        <option>2400 - 3200</option>
+        <option>3200 - 4000</option>
+        <option>4000 - 4800</option>
+        <option>4800 - 5600</option>
+        <option>5600 - 6400</option>
+        <option>6400+</option>
+      </select>
+    </fieldset>
 
     <fieldset class="form-group">
       <label for="exampleInputEmail1">Email address</label>
       <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-      <small class="text-muted">We'll never share your email with anyone else.</small>
+      <small class="text-muted">This is just for comfirmation sake. We will never share your email with anyone else, or send you anything.</small>
     </fieldset>
-    <fieldset class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-    </fieldset>
-    <fieldset class="form-group">
-      <label for="exampleSelect1">Example select</label>
-      <select class="form-control" id="exampleSelect1">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
-    </fieldset>
-    <fieldset class="form-group">
-      <label for="exampleSelect2">Example multiple select</label>
-      <select multiple class="form-control" id="exampleSelect2">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
-    </fieldset>
-    <fieldset class="form-group">
-      <label for="exampleTextarea">Example textarea</label>
-      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-    </fieldset>
-    <fieldset class="form-group">
-      <label for="exampleInputFile">File input</label>
-      <input type="file" class="form-control-file" id="exampleInputFile">
-      <small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
-    </fieldset>
-    <div class="radio">
-      <label>
-        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-        Option one is this and that&mdash;be sure to include why it's great
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-        Option two can be something else and selecting it will deselect option one
-      </label>
-    </div>
-    <div class="radio disabled">
-      <label>
-        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-        Option three is disabled
-      </label>
-    </div>
+
     <div class="checkbox">
       <label>
-        <input type="checkbox"> Check me out
+        <input type="checkbox"> First Co-op Work Term?
       </label>
     </div>
+
+    <br/>
+
     <button type="submit" class="btn btn-primary">Submit</button>
+
   </form>
 </div>
 
 <script>
+
   var arrayofjobs = [];
+  var arrayofcompanies = [];
+  var arrayoflocations = [];
+
 
   $(function() {
-    var availableTags = ["Microsoft","Sony","Google","A9","Zenefits","A Thinking Ape","UBC","Alcatel Lucant","Amazon","Facebook","Twitter"
-    ];
-    
-    $(".autocomplete").autocomplete({
-      source: availableTags
+    $.ajax({
+      url: "/api/companies",
+      success: function(result2) {
+        arrayofcompanies = result2;
+        console.log(result2);
+        $(".autocomplete").autocomplete({
+        source: arrayofcompanies
+        })
+      } 
     });
   });
 
 
   $(function() {
     $.ajax({
-      url: "http://localhost:3000/api/jobtitles",
+      url: "/api/jobtitles",
       success: function(result) {
         arrayofjobs = result;
         console.log(result);
-
         $(".autocomplete2").autocomplete({
         source: arrayofjobs
         })
@@ -215,13 +214,18 @@ You can put stuff here if you want
   });
 
   $(function() {
-    var availableTags3 = ["San Francisco","Vancouver","Toronto","Waterloo","Seattle","Victoria"
-    ];
-    
-    $(".autocomplete3").autocomplete({
-      source: availableTags3
+    $.ajax({
+      url: "/api/locations",
+      success: function(result3) {
+        arrayoflocations = result3;
+        console.log(result3);
+        $(".autocomplete3").autocomplete({
+        source: arrayoflocations
+        })
+      } 
     });
   });
+
 
 </script>
 
