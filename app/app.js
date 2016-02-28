@@ -12,6 +12,7 @@ mongoose.connect("mongodb://admin:nwhacks@ds045684.mlab.com:45684/nwhacks");
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var api = require("./routes/api");
+var mainpage = require("./routes/mainpage");
 var new_review_form = require("./routes/new_review_form");
 
 var app = express();
@@ -32,6 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use("/api", api);
+app.use("/main", mainpage);
 app.use("/new_review_form", new_review_form);
 
 // catch 404 and forward to error handler

@@ -3,11 +3,28 @@ var router = express.Router();
 var JobPost = require("../models/jobpost.js");
 var UserReview = require("../models/userreview.js");
 
+//router.get("/jobtitles", function(req, res) {
+//    // Placeholder
+//    //var jobtitles = ["application developer", "software engineer", "financial analyst"];
+//    //res.json(jobtitles);
+
+//
+//});
+//
+//router.get("/companies", function(req, res){
+//
+//});
+//
+//router.get("/schools", function(req, res) {
+//
+//});
+//
+//router.get("/faculties", function(req, res) {
+//
+//});
+
 router.get("/jobtitles", function(req, res) {
-    // Placeholder
-    //var jobtitles = ["application developer", "software engineer", "financial analyst"];
-    //res.json(jobtitles);
-    JobPost.find({}, function(err, docs) {
+    JobPost.find().distinct({}, function(err, docs) {
         var json_res = [];
         for (var i=0; i<docs.length; i++) {
             json_res.push(docs[i]["jobTitle"]);
@@ -15,21 +32,7 @@ router.get("/jobtitles", function(req, res) {
 
         res.json(json_res);
     });
-
 });
-
-router.get("/companies", function(req, res){
-
-});
-
-router.get("/schools", function(req, res) {
-
-});
-
-router.get("/faculties", function(req, res) {
-
-});
-
 module.exports = router;
 
 // list of job title
