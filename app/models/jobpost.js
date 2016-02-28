@@ -1,8 +1,6 @@
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
-mongoose.connect("mongodb://admin:nwhacks@ds045684.mlab.com:45684/nwhacks")
-
 var jobSchema = new Schema({
     jobTitle: String,
     employer: String,
