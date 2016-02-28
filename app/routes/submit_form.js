@@ -2,12 +2,11 @@ var express = require("express");
 var router = express.Router();
 
 var bodyParser = require("body-parser");
-var urlencoded = bodyParser.urlencoded({extended: true});
-
+router.use("/", bodyParser.urlencoded({extended: true}));
 var JobPost = require("../models/jobpost.js");
 var UserReview = require("../models/userreview.js");
 
-router.post("/", function(req, urlencoded, res) {
+router.post("/", function(req, res) {
     console.log(req.uni);
     console.log(req.fac);
 
@@ -20,6 +19,10 @@ router.post("/", function(req, urlencoded, res) {
     var compensationScore = req.body.compensation;
     var salary = req.body.salary;
     var comments = req.body.comments;
+
+    console.log(companyName);
+    console.log(jobTitle);
+    console.log(location);
 
     var targetJobPost = JobPost.findOne({employer: companyName, jobTitle: jobTitle}, "_id", function(err, jobID) {
         if (err) console.log(err);
