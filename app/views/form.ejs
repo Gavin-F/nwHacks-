@@ -1,0 +1,153 @@
+<html>
+<head>
+<title>
+
+</title>
+
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+stuff and stuff
+<img src = "images/stickman.jpg">
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">NoCoopJob :(</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Schools
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">UBC</a></li>
+          <li><a href="#">UW</a></li>
+          <li><a href="#">UT</a></li> 
+        </ul>
+      </li>
+      <li><a href="frame_b.html" target = "frame_a">Highest Rated</a></li> 
+      <li><a href="#">Most Recent</a></li> 
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+    
+  </div>
+</nav>
+
+<div class="container">
+  <form>
+    <div class="form-group">
+      <label>Company Name</label>
+      <input class="form-control autocomplete" placeholder="Enter A" />
+    </div>
+    
+    <div class="form-group">
+      <label >Job Title</label>
+      <input class="form-control autocomplete2">
+    </div>
+
+    <fieldset class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+      <small class="text-muted">We'll never share your email with anyone else.</small>
+    </fieldset>
+    <fieldset class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </fieldset>
+    <fieldset class="form-group">
+      <label for="exampleSelect1">Example select</label>
+      <select class="form-control" id="exampleSelect1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </fieldset>
+    <fieldset class="form-group">
+      <label for="exampleSelect2">Example multiple select</label>
+      <select multiple class="form-control" id="exampleSelect2">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </fieldset>
+    <fieldset class="form-group">
+      <label for="exampleTextarea">Example textarea</label>
+      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    </fieldset>
+    <fieldset class="form-group">
+      <label for="exampleInputFile">File input</label>
+      <input type="file" class="form-control-file" id="exampleInputFile">
+      <small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+    </fieldset>
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+        Option one is this and that&mdash;be sure to include why it's great
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+        Option two can be something else and selecting it will deselect option one
+      </label>
+    </div>
+    <div class="radio disabled">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+        Option three is disabled
+      </label>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"> Check me out
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<script>
+  var arrayofjobs = [];
+
+  $(function() {
+    var availableTags = ["Junior Progammer","QA Analyst","Software Developer","Web Developer","Mobile App Developer",""
+    ];
+    
+    $(".autocomplete").autocomplete({
+      source: availableTags
+    });
+  });
+
+
+  $(function() {
+    $.ajax({
+      url: "http://localhost:3000/api/jobtitles",
+      success: function(result) {
+        arrayofjobs = result;
+        console.log(result);
+
+        $(".autocomplete2").autocomplete({
+        source: arrayofjobs
+        })
+      } 
+    });
+  });
+</script>
+
+</body>
+</html>
