@@ -10,7 +10,15 @@ router.get("/jobtitles", function(req, res) {
 });
 
 router.get("/companies", function(req, res){
+    JobPost.find().distinct("employer", function(err, results) {
+        res.json(results);
+    })
+});
 
+router.get("/locations", function(req, res) {
+    JobPost.find().distinct("location", function(err, results) {
+        res.json(results);
+    })
 });
 
 router.get("/schools", function(req, res) {
