@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
 <style>
 .navbar-form {
@@ -146,7 +148,7 @@ You can put stuff here if you want<br><br><br>
       <div class="mystyle">
       <label>What faculty are you in?</label>
       </div>
-      <input class="form-control autocomplete" placeholder="Enter a faculty" name="faculty"/>
+      <input class="form-control autocomplete2" placeholder="Enter a faculty" name="faculty"/>
     </div>
     <br>
     
@@ -157,6 +159,38 @@ You can put stuff here if you want<br><br><br>
 </div>
 
 </div>
+
+<script>
+    var arrayofschools = [];
+    var arrayoffaculties = [];
+
+  $(function() {
+    $.ajax({
+      url: "/api/schools",
+      success: function(result) {
+        arrayofschools = result;
+        console.log(result);
+        $(".autocomplete").autocomplete({
+        source: arrayofschools
+        })
+      } 
+    });
+  });
+
+    $(function() {
+    $.ajax({
+      url: "/api/faculties",
+      success: function(result2) {
+        arrayoffaculties = result2;
+        console.log(result2);
+        $(".autocomplete2").autocomplete({
+        source: arrayoffaculties
+        })
+      } 
+    });
+  });
+
+</script>
 
 </body>
 </html>

@@ -12,6 +12,8 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="/scripts/jquery.rating.pack.js"></script>
+  <link rel="stylesheet" href="/stylesheets/jquery.rating.css">
 
 
 <style>
@@ -117,32 +119,38 @@ You can put stuff here if you want
 
     <div>
       <label>Career Developement Rating</label> <br/>
-      <small class="text-muted">Select from 1 (lowest) to 5 (highest)</small> <br/>
-      <label class="radio-inline"><input type="radio" name="optradio">1</label>
-      <label class="radio-inline"><input type="radio" name="optradio">2</label>
-      <label class="radio-inline"><input type="radio" name="optradio">3</label>
-      <label class="radio-inline"><input type="radio" name="optradio">4</label>
-      <label class="radio-inline"><input type="radio" name="optradio">5</label>
+      <small class="text-muted">Select from 1 (lowest) to 5 (highest)</small> 
+      <br/>
+      <input name="career" type="radio" class="star"/> 
+      <input name="career" type="radio" class="star"/> 
+      <input name="career" type="radio" class="star"/> 
+      <input name="career" type="radio" class="star"/> 
+      <input name="career" type="radio" class="star"/> 
+      <br/>
     </div>
 
     <div>
       <label>Company Culture Rating</label> <br/>
-      <small class="text-muted">Select from 1 (lowest) to 5 (highest)</small> <br/>
-      <label class="radio-inline"><input type="radio" name="optradio">1</label>
-      <label class="radio-inline"><input type="radio" name="optradio">2</label>
-      <label class="radio-inline"><input type="radio" name="optradio">3</label>
-      <label class="radio-inline"><input type="radio" name="optradio">4</label>
-      <label class="radio-inline"><input type="radio" name="optradio">5</label>
+      <small class="text-muted">Select from 1 (lowest) to 5 (highest)</small>       
+      <br/>
+      <input name="culture" type="radio" class="star"/> 
+      <input name="culture" type="radio" class="star"/> 
+      <input name="culture" type="radio" class="star"/> 
+      <input name="culture" type="radio" class="star"/> 
+      <input name="culture" type="radio" class="star"/> 
+      <br/>
     </div>
 
     <div>
       <label>Compensation Rating</label> <br/>
-      <small class="text-muted">Select from 1 (lowest) to 5 (highest)</small> <br/>
-      <label class="radio-inline"><input type="radio" name="optradio">1</label>
-      <label class="radio-inline"><input type="radio" name="optradio">2</label>
-      <label class="radio-inline"><input type="radio" name="optradio">3</label>
-      <label class="radio-inline"><input type="radio" name="optradio">4</label>
-      <label class="radio-inline"><input type="radio" name="optradio">5</label>
+      <small class="text-muted">Select from 1 (lowest) to 5 (highest)</small>       
+      <br/>
+      <input name="compensation" type="radio" class="star"/> 
+      <input name="compensation" type="radio" class="star"/> 
+      <input name="compensation" type="radio" class="star"/> 
+      <input name="compensation" type="radio" class="star"/> 
+      <input name="compensation" type="radio" class="star"/> 
+      <br/>
     </div>
 
     <br/>
@@ -172,6 +180,11 @@ You can put stuff here if you want
         <input type="checkbox"> First Co-op Work Term?
       </label>
     </div>
+
+    <fieldset class="form-group">
+      <label for="exampleTextarea">Additional Comments</label>
+      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    </fieldset>
 
     <br/>
 
