@@ -14,6 +14,7 @@ var main_redirect = require("./routes/main_redirect");
 var api = require("./routes/api");
 var mainpage = require("./routes/mainpage");
 var new_review_form = require("./routes/new_review_form");
+var review = require("./routes/review");
 
 var app = express();
 var port = process.env.PORT || 3000;
@@ -49,6 +50,7 @@ app.use("/api", api);
 app.use("/*/*/api", api);
 app.use("/*/*/main", mainpage);
 app.use("/*/*/new_review_form", new_review_form);
+app.use("/*/*/review", review);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
