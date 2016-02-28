@@ -246,16 +246,16 @@
     });
 
     $(document).ready(function(){
-      $("#companyName").change(function(){
+      $("#companyName").bind('autocompletechange change', function(){
         $("#jobTitle").prop('disabled', !($(this).val()))
       });
-    })
+    });
 
     $(document).ready(function(){
-      $("#jobTitle").change(function(){
+      $("#jobTitle").bind('autocompletechange change', function(){
         $("#location").prop('disabled', !($(this).val()))
       });
-    })
+    });
 
     </script>
   </div>
