@@ -122,32 +122,32 @@ You can put stuff here if you want
   <h2 color="gray"> Rate your co-op experience </h2>
   <br/>
 
-  <form>
+  <form method="POST" action="submit_form">
 
     <div class="form-group">
       <label>Company Name</label>
-      <input class="form-control autocomplete" placeholder="Enter the company name" />
+      <input name="companyName" class="form-control autocomplete" placeholder="Enter the company name" />
     </div>
     
     <div class="form-group">
       <label>Job Title</label>
-      <input class="form-control autocomplete2" placeholder="Enter the job title"/>
+      <input name="jobTitle" class="form-control autocomplete2" placeholder="Enter the job title"/>
     </div>
 
      <div class="form-group">
       <label>Location</label>
-      <input class="form-control autocomplete3" placeholder="Enter the job location"/>
+      <input name="location" class="form-control autocomplete3" placeholder="Enter the job location"/>
     </div>
 
     <div>
       <label>Career Developement Rating</label> <br/>
       <small class="text-muted">Select from 1 (lowest) to 5 (highest)</small> 
       <br/>
-      <input name="career" type="radio" class="star"/> 
-      <input name="career" type="radio" class="star"/> 
-      <input name="career" type="radio" class="star"/> 
-      <input name="career" type="radio" class="star"/> 
-      <input name="career" type="radio" class="star"/> 
+      <input name="career" type="radio" class="star" value="1"/> 
+      <input name="career" type="radio" class="star" value="2"/> 
+      <input name="career" type="radio" class="star" value="3"/> 
+      <input name="career" type="radio" class="star" value="4"/> 
+      <input name="career" type="radio" class="star" value="5"/> 
       <br/>
     </div>
 
@@ -155,11 +155,11 @@ You can put stuff here if you want
       <label>Company Culture Rating</label> <br/>
       <small class="text-muted">Select from 1 (lowest) to 5 (highest)</small>       
       <br/>
-      <input name="culture" type="radio" class="star"/> 
-      <input name="culture" type="radio" class="star"/> 
-      <input name="culture" type="radio" class="star"/> 
-      <input name="culture" type="radio" class="star"/> 
-      <input name="culture" type="radio" class="star"/> 
+      <input name="culture" type="radio" class="star" value="1"/> 
+      <input name="culture" type="radio" class="star" value="2"/> 
+      <input name="culture" type="radio" class="star" value="3"/> 
+      <input name="culture" type="radio" class="star" value="4"/> 
+      <input name="culture" type="radio" class="star" value="5"/> 
       <br/>
     </div>
 
@@ -167,11 +167,11 @@ You can put stuff here if you want
       <label>Compensation Rating</label> <br/>
       <small class="text-muted">Select from 1 (lowest) to 5 (highest)</small>       
       <br/>
-      <input name="compensation" type="radio" class="star"/> 
-      <input name="compensation" type="radio" class="star"/> 
-      <input name="compensation" type="radio" class="star"/> 
-      <input name="compensation" type="radio" class="star"/> 
-      <input name="compensation" type="radio" class="star"/> 
+      <input name="compensation" type="radio" class="star" value="1"/> 
+      <input name="compensation" type="radio" class="star" value="2"/> 
+      <input name="compensation" type="radio" class="star" value="3"/> 
+      <input name="compensation" type="radio" class="star" value="4"/> 
+      <input name="compensation" type="radio" class="star" value="5"/> 
       <br/>
     </div>
 
@@ -179,15 +179,15 @@ You can put stuff here if you want
 
     <fieldset class="form-group">
       <label for="exampleSelect1">Monthly Salary Range (CAD)</label>
-      <select class="form-control" id="exampleSelect1">
+      <select name="salary" class="form-control" id="exampleSelect1">
         <option>Select below</option>
-        <option>1600 - 2400</option>
-        <option>2400 - 3200</option>
-        <option>3200 - 4000</option>
-        <option>4000 - 4800</option>
-        <option>4800 - 5600</option>
-        <option>5600 - 6400</option>
-        <option>6400+</option>
+        <option value="2000">1600 - 2400</option>
+        <option value="2800">2400 - 3200</option>
+        <option value="3600">3200 - 4000</option>
+        <option value="4400">4000 - 4800</option>
+        <option value="5200">4800 - 5600</option>
+        <option value="6000">5600 - 6400</option>
+        <option value="6400">6400+</option>
       </select>
     </fieldset>
 
@@ -197,15 +197,9 @@ You can put stuff here if you want
       <small class="text-muted">This is just for comfirmation sake. We will never share your email with anyone else, or send you anything.</small>
     </fieldset>
 
-    <div class="checkbox">
-      <label>
-        <input type="checkbox"> First Co-op Work Term?
-      </label>
-    </div>
-
     <fieldset class="form-group">
       <label for="exampleTextarea">Additional Comments</label>
-      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+      <textarea name="comments" class="form-control" id="exampleTextarea" rows="3"></textarea>
     </fieldset>
 
     <br/>
