@@ -37,11 +37,24 @@
 .container {
   width:500px;
 }
+
+.mypage {
+    margin-left:50px;
+    margin-right:50px;
+}
+
+.reviewright {
+    margin-left: 200px;
+    font-style: bold;
+}
+
 </style>
 
 
 </head>
 <body background = "/images/background.jpg">
+<div class = "mypage">
+
 <div class = "mystyle">
 Stuff and stuff
 </div>
@@ -64,7 +77,7 @@ You can put stuff here if you want
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
             <li><a href="../">Change School</a></li>
-            <li><a href="main">Reviews</a></li>
+            <li class="active"><a href="main">Jobs</a></li>
             <!--
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Schools<b class="caret"></b></a>
@@ -80,8 +93,16 @@ You can put stuff here if you want
             -->
             <li><a href="#">Top Rated</a></li>
             <li><a href="#">Most Recent</a></li>
-            <li class="active"><a href="new_review_form">Submit a Review</a></li>
-        </ul>
+
+
+            
+            <li class="reviewright"><a href="new_review_form"><b><font color = "brown">Submit a Review <img src="/images/write.jpg" width="22px" height="22px"></font></b></a></li>
+            
+            
+        </ul> 
+            
+        
+        
         <div class="col-sm-3 col-md-3 pull-right">
             <form class="navbar-form" role="search">
                 <div class="input-group">
@@ -91,7 +112,8 @@ You can put stuff here if you want
                     </div>
                 </div>
             </form>
-        </div>        
+        </div>    
+
     </div>
 </nav>  
 
