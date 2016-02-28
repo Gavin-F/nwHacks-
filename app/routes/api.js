@@ -49,6 +49,20 @@ router.get("/all_postings", function(req, res) {
     })
 });
 
+router.get("/posting_reviews/:id", function(req, res) {
+    var posting_id = req.params.id;
+    JobPost.find({_id: posting_id}, function(err, posting) {
+        if (err) console.log(err);
+
+        UserReview.find({jobPostID: posting_id}, function(err2, docs) {
+            if (err2) console.log(err2);
+
+            console.log(docs);
+            res.send(posting.concat(docs));
+        })
+    })
+})
+
 module.exports = router;
 
 // list of job title

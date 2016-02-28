@@ -17,6 +17,8 @@ router.post("/", function(req, res) {
     var careerScore = req.body.career;
     var cultureScore = req.body.culture;
     var compensationScore = req.body.compensation;
+    var avgScore = (parseInt(careerScore) + parseInt(cultureScore) + parseInt(compensationScore)) / 3;
+    console.log(avgScore);
     var salary = req.body.salary;
     var comments = req.body.comments;
 
@@ -29,13 +31,16 @@ router.post("/", function(req, res) {
 
         if (jobID) {
             var newUserReview = new UserReview({
-                jobPostID: jobID.toString(),
+                jobPostID: jobID._id,
                 comment: comments,
                 careerDevelopmentRating: careerScore,
                 cultureRating: cultureScore,
                 perksRating: compensationScore,
+                avgRating: avgScore,
                 salary: salary
             });
+
+
 
             newUserReview.save(function(err) {
                 if (err) console.log(err);
