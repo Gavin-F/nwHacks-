@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
 <style>
 .navbar-form {
@@ -29,6 +31,9 @@
     font-family: "Lucida Console";
     font-size: 18;
 
+}
+.container {
+  width:500px;
 }
 </style>
 
@@ -91,13 +96,13 @@ You can put stuff here if you want
     </div>
     
     <div class="form-group">
-      <label >Job Title</label>
+      <label>Job Title</label>
       <input class="form-control autocomplete2">
     </div>
 
      <div class="form-group">
       <label>Location</label>
-      <input class="form-control autocomplete2">
+      <input class="form-control autocomplete3">
     </div>
 
     <div>
@@ -180,7 +185,7 @@ You can put stuff here if you want
   var arrayofjobs = [];
 
   $(function() {
-    var availableTags = ["Junior Progammer","QA Analyst","Software Developer","Web Developer","Mobile App Developer",""
+    var availableTags = ["Microsoft","Sony","Google","A9","Zenefits","A Thinking Ape","UBC","Alcatel Lucant","Amazon","Facebook","Twitter"
     ];
     
     $(".autocomplete").autocomplete({
@@ -202,6 +207,16 @@ You can put stuff here if you want
       } 
     });
   });
+
+  $(function() {
+    var availableTags3 = ["San Francisco","Vancouver","Toronto","Waterloo","Seattle","Victoria"
+    ];
+    
+    $(".autocomplete3").autocomplete({
+      source: availableTags3
+    });
+  });
+
 </script>
 
 </body>
