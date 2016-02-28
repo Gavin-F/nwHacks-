@@ -4,19 +4,25 @@ var JobPost = require("../models/jobpost.js");
 var UserReview = require("../models/userreview.js");
 
 router.get("/jobtitles", function(req, res) {
-    JobPost.find().distinct("jobTitle", function(err, results) {
+    var target_uni = req.uni;
+    var target_fac = req.fac;
+    JobPost.find({university: target_uni, faculty: target_fac}).distinct("jobTitle", function(err, results) {
         res.json(results);
     })
 });
 
 router.get("/companies", function(req, res){
-    JobPost.find().distinct("employer", function(err, results) {
+    var target_uni = req.uni;
+    var target_fac = req.fac;
+    JobPost.find({university: target_uni, faculty: target_fac}).distinct("employer", function(err, results) {
         res.json(results);
     })
 });
 
 router.get("/locations", function(req, res) {
-    JobPost.find().distinct("location", function(err, results) {
+    var target_uni = req.uni;
+    var target_fac = req.fac;
+    JobPost.find({university: target_uni, faculty: target_fac}).distinct("location", function(err, results) {
         res.json(results);
     })
 });
