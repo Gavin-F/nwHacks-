@@ -34,7 +34,7 @@ router.get("/schools", function(req, res) {
 });
 
 router.get("/faculties", function(req, res) {
-    JobPost.find().distinct("faculty", function(err, result) {
+    JobPost.find().distinct("faculty", function(err, results) {
         res.json(results);
     });
 });
