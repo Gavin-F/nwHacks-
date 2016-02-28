@@ -1,11 +1,11 @@
 <html>
 <head>
-<title>
+  <title>
 
-</title>
+  </title>
 
 
- <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -16,260 +16,249 @@
   <link rel="stylesheet" href="/stylesheets/jquery.rating.css">
 
 
-<style>
-.navbar-form {
+  <style>
+  .navbar-form {
     overflow: auto;
-}
-.navbar-form .form-control {
+  }
+  .navbar-form .form-control {
     display: inline-block;
     width: 25%; 
     vertical-align: middle;
-}
-.navbar-form .form-group {
+  }
+  .navbar-form .form-group {
     display: inline;
-}
-.mystyle {
+  }
+  .mystyle {
     display: inline;
     font-family: "Lucida Console";
     font-size: 18;
 
-}
-.container {
-  width:500px;
-}
+  }
+  .container {
+    width:500px;
+  }
 
-.mypage {
-    margin-left:50px;
-    margin-right:50px;
-}
+  .mypage {
+    width:1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.reviewright {
-    margin-left: 200px;
+  .reviewright {
+    margin-left: 150px;
     font-style: bold;
-}
+  }   
 
-</style>
+  </style>
 
 
 </head>
 <body background = "/images/background.jpg">
-<div class = "mypage">
+  <div class = "mypage">
 
-<div class = "mystyle">
-Stuff and stuff
-</div>
-<img src = "/images/stickman.png" width = "150px" height = "150px">
-<div class = "mystyle">
-You can put stuff here if you want
-</div>
-<nav class="navbar navbar-default" role="navigation">
-    
-    <div class="navbar-header">
-       
+    <div class = "mystyle">
+      Stuff and stuff
+    </div>
+    <img src = "/images/stickman.png" width = "150px" height = "150px">
+    <div class = "mystyle">
+      You can put stuff here if you want
+    </div>
+    <nav class="navbar navbar-default" role="navigation">
+
+      <div class="navbar-header">
+
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#">NoCoopJob:(</a>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <li><a href="../">Change School</a></li>
-            <li class="active"><a href="main">Jobs</a></li>
-            <!--
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Schools<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">UBC</a></li>
-                    <li><a href="#">UW</a></li>
-                    <li><a href="#">UT</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li class="divider"></li>                    
-                </ul>
-            </li>
-            -->
-            <li><a href="#">Top Rated</a></li>
-            <li><a href="#">Most Recent</a></li>
+          <li><a href="../../">Change School</a></li>
+          <li><a href="main">Jobs</a></li>
+
+          <li><a href="#">Top Rated</a></li>
+          <li><a href="#">Most Recent</a></li>
 
 
-            
-            <li class="reviewright"><a href="new_review_form"><b><font color = "brown">Submit a Review <img src="/images/write.jpg" width="22px" height="22px"></font></b></a></li>
-            
-            
+
+          <li class="reviewright"><a href="new_review_form"><b><font color = "brown">Submit a Review <img src="/images/write.jpg" width="22px" height="22px"></font></b></a></li>
+
+
         </ul> 
-            
-        
-        
+
+
+
         <div class="col-sm-3 col-md-3 pull-right">
-            <form class="navbar-form" role="search">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search" name="q">
-                    <div class="input-group-btn">
-                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                    </div>
-                </div>
-            </form>
+          <form class="navbar-form" role="search">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search" name="q">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+              </div>
+            </div>
+          </form>
         </div>    
 
-    </div>
-</nav>  
+      </div>
+    </nav>  
 
 
-<div class="container">
-  <h2 color="gray"> Rate your co-op experience </h2>
-  <br/>
-
-  <form method="POST" action="submit_form">
-
-    <div class="form-group">
-      <label>Company Name</label>
-      <input name="companyName" class="form-control autocomplete" placeholder="Enter the company name"/>
-    </div>
-    
-    <div class="form-group">
-      <label>Job Title</label>
-      <input name="jobTitle" class="form-control autocomplete2" placeholder="Enter the job title" disabled/>
-    </div>
-
-     <div class="form-group">
-      <label>Location</label>
-      <input name="location" class="form-control autocomplete3" placeholder="Enter the job location" disabled/>
-    </div>
-
-    <div>
-      <label>Career Developement Rating</label> <br/>
-      <small class="text-muted">Select from 1 (lowest) to 5 (highest)</small> 
+    <div class="container">
+      <h2 color="gray"> Rate your co-op experience </h2>
       <br/>
-      <input name="career" type="radio" class="star" value="1"/> 
-      <input name="career" type="radio" class="star" value="2"/> 
-      <input name="career" type="radio" class="star" value="3"/> 
-      <input name="career" type="radio" class="star" value="4"/> 
-      <input name="career" type="radio" class="star" value="5"/> 
-      <br/>
+
+      <form method="POST" action="submit_form">
+
+        <div class="form-group">
+          <label>Company Name</label>
+          <input name="companyName" class="form-control autocomplete" placeholder="Enter the company name"/>
+        </div>
+
+        <div class="form-group">
+          <label>Job Title</label>
+          <input name="jobTitle" class="form-control autocomplete2" placeholder="Enter the job title" disabled/>
+        </div>
+
+        <div class="form-group">
+          <label>Location</label>
+          <input name="location" class="form-control autocomplete3" placeholder="Enter the job location" disabled/>
+        </div>
+
+        <div>
+          <label>Career Developement Rating</label> <br/>
+          <small class="text-muted">Select from 1 (lowest) to 5 (highest)</small> 
+          <br/>
+          <input name="career" type="radio" class="star" value="1"/> 
+          <input name="career" type="radio" class="star" value="2"/> 
+          <input name="career" type="radio" class="star" value="3"/> 
+          <input name="career" type="radio" class="star" value="4"/> 
+          <input name="career" type="radio" class="star" value="5"/> 
+          <br/>
+        </div>
+
+        <div>
+          <label>Company Culture Rating</label> <br/>
+          <small class="text-muted">Select from 1 (lowest) to 5 (highest)</small>       
+          <br/>
+          <input name="culture" type="radio" class="star" value="1"/> 
+          <input name="culture" type="radio" class="star" value="2"/> 
+          <input name="culture" type="radio" class="star" value="3"/> 
+          <input name="culture" type="radio" class="star" value="4"/> 
+          <input name="culture" type="radio" class="star" value="5"/> 
+          <br/>
+        </div>
+
+        <div>
+          <label>Compensation Rating</label> <br/>
+          <small class="text-muted">Select from 1 (lowest) to 5 (highest)</small>       
+          <br/>
+          <input name="compensation" type="radio" class="star" value="1"/> 
+          <input name="compensation" type="radio" class="star" value="2"/> 
+          <input name="compensation" type="radio" class="star" value="3"/> 
+          <input name="compensation" type="radio" class="star" value="4"/> 
+          <input name="compensation" type="radio" class="star" value="5"/> 
+          <br/>
+        </div>
+
+        <br/>
+
+        <fieldset class="form-group">
+          <label for="exampleSelect1">Monthly Salary Range (CAD)</label>
+          <select name="salary" class="form-control" id="exampleSelect1">
+            <option>Select below</option>
+            <option value="2000">1600 - 2400</option>
+            <option value="2800">2400 - 3200</option>
+            <option value="3600">3200 - 4000</option>
+            <option value="4400">4000 - 4800</option>
+            <option value="5200">4800 - 5600</option>
+            <option value="6000">5600 - 6400</option>
+            <option value="6400">6400+</option>
+          </select>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+          <small class="text-muted">This is just for comfirmation sake. We will never share your email with anyone else, or send you anything.</small>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <label for="exampleTextarea">Additional Comments</label>
+          <textarea name="comments" class="form-control" id="exampleTextarea" rows="3"></textarea>
+        </fieldset>
+
+        <br/>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+      </form>
     </div>
 
-    <div>
-      <label>Company Culture Rating</label> <br/>
-      <small class="text-muted">Select from 1 (lowest) to 5 (highest)</small>       
-      <br/>
-      <input name="culture" type="radio" class="star" value="1"/> 
-      <input name="culture" type="radio" class="star" value="2"/> 
-      <input name="culture" type="radio" class="star" value="3"/> 
-      <input name="culture" type="radio" class="star" value="4"/> 
-      <input name="culture" type="radio" class="star" value="5"/> 
-      <br/>
-    </div>
+    <script>
 
-    <div>
-      <label>Compensation Rating</label> <br/>
-      <small class="text-muted">Select from 1 (lowest) to 5 (highest)</small>       
-      <br/>
-      <input name="compensation" type="radio" class="star" value="1"/> 
-      <input name="compensation" type="radio" class="star" value="2"/> 
-      <input name="compensation" type="radio" class="star" value="3"/> 
-      <input name="compensation" type="radio" class="star" value="4"/> 
-      <input name="compensation" type="radio" class="star" value="5"/> 
-      <br/>
-    </div>
-
-    <br/>
-
-    <fieldset class="form-group">
-      <label for="exampleSelect1">Monthly Salary Range (CAD)</label>
-      <select name="salary" class="form-control" id="exampleSelect1">
-        <option>Select below</option>
-        <option value="2000">1600 - 2400</option>
-        <option value="2800">2400 - 3200</option>
-        <option value="3600">3200 - 4000</option>
-        <option value="4400">4000 - 4800</option>
-        <option value="5200">4800 - 5600</option>
-        <option value="6000">5600 - 6400</option>
-        <option value="6400">6400+</option>
-      </select>
-    </fieldset>
-
-    <fieldset class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-      <small class="text-muted">This is just for comfirmation sake. We will never share your email with anyone else, or send you anything.</small>
-    </fieldset>
-
-    <fieldset class="form-group">
-      <label for="exampleTextarea">Additional Comments</label>
-      <textarea name="comments" class="form-control" id="exampleTextarea" rows="3"></textarea>
-    </fieldset>
-
-    <br/>
-
-    <button type="submit" class="btn btn-primary">Submit</button>
-
-  </form>
-</div>
-
-<script>
-
-  var arrayofjobs = [];
-  var arrayofcompanies = [];
-  var arrayoflocations = [];
+    var arrayofjobs = [];
+    var arrayofcompanies = [];
+    var arrayoflocations = [];
 
 
-  $(function() {
-    $.ajax({
-      url: "api/companies",
-      success: function(result2) {
-        arrayofcompanies = result2;
-        console.log(result2);
-        $(".autocomplete").autocomplete({
-        source: arrayofcompanies
-        })
-      } 
+    $(function() {
+      $.ajax({
+        url: "api/companies",
+        success: function(result2) {
+          arrayofcompanies = result2;
+          console.log(result2);
+          $(".autocomplete").autocomplete({
+            source: arrayofcompanies
+          })
+        } 
+      });
     });
-  });
 
 
-  $(function() {
-    $.ajax({
-      url: "api/jobtitles",
-      success: function(result) {
-        arrayofjobs = result;
-        console.log(result);
-        $(".autocomplete2").autocomplete({
-        source: arrayofjobs
-        })
-      } 
+    $(function() {
+      $.ajax({
+        url: "api/jobtitles",
+        success: function(result) {
+          arrayofjobs = result;
+          console.log(result);
+          $(".autocomplete2").autocomplete({
+            source: arrayofjobs
+          })
+        } 
+      });
     });
-  });
 
-  $(function() {
-    $.ajax({
-      url: "api/locations",
-      success: function(result3) {
-        arrayoflocations = result3;
-        console.log(result3);
-        $(".autocomplete3").autocomplete({
-        source: arrayoflocations
-        })
-      } 
+    $(function() {
+      $.ajax({
+        url: "api/locations",
+        success: function(result3) {
+          arrayoflocations = result3;
+          console.log(result3);
+          $(".autocomplete3").autocomplete({
+            source: arrayoflocations
+          })
+        } 
+      });
     });
-  });
 
-  console.log($('input[name=companyName]').val());
-
-  $('input[name=companyName]').on("Change", function() {
     console.log($('input[name=companyName]').val());
-    $('input[name=jobTitle]').prop('disabled', !($(this).val()))
-  });
 
-  $('input[name=jobTitle]').change(function() {
-    $('input[name=location]').prop('disabled', !($(this).val()))
-  });
+    $('input[name=companyName]').on("Change", function() {
+      console.log($('input[name=companyName]').val());
+      $('input[name=jobTitle]').prop('disabled', !($(this).val()))
+    });
+
+    $('input[name=jobTitle]').change(function() {
+      $('input[name=location]').prop('disabled', !($(this).val()))
+    });
 
 
 
-</script>
+    </script>
 
-</body>
-</html>
+  </body>
+  </html>
