@@ -19,34 +19,32 @@ $(document).ready(function() {
                 var cultureScore = posting.avgCultureRating;
                 var perksScore = posting.avgPerksRating;
                 var postingID = posting._id;
+                var employer = posting.employer;
 
                 var postingHTML = `
-                         <a href="review/${postingID}">
-                            <div class="panel panel-default">
-
-
-                                <div class="panel-heading">
-                                    <table style="width:100%">
-                                        <tr>
-                                            <td>${jobTitle}</td>
-                                            <td width = "10%">Rating: ${avgRating}</td>
-                                        </tr>
-                                    </table>
-                                </div>
-
-                                <div class="panel-body">
-                                    <table style="width:100%">
-                                        <tr>
-                                            <td>Content</td>
-                                            <td width = "10%"><img src="/images/culture.png" height="22px" width="22px" ="culture">: ${cultureScore}<br>
-                                                <img src="/images/compensation.png" height="22px" width="22px">: ${perksScore}<br>
-                                                <img src="/images/career.png" height="22px" width="22px">: ${careerScore}<br>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
+                         <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>${jobTitle}</td>
+                                        <td width = "10%">Rating: </td>
+                                    </tr>
+                                </table>
                             </div>
-                        </a>
+
+                            <div class="panel-body">
+                                <table style="width:100%">
+                                    <tr>
+                                        <td width = "15%"><a href="../new_review_form?jobTitle=${jobTitle}&employer=${employer}"><button type="button" class="btn btn-default">Rate This Job</button></a></td>
+                                        <td>Content</td>
+                                        <td width = "10%"><img src="/images/culture.png" height="22px" width="22px">: ${cultureScore}<br>
+                                            <img src="/images/compensation.png" height="22px" width="22px">: ${perksScore}<br>
+                                            <img src="/images/career.png" height="22px" width="22px">: ${careerScore}<br>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
                     `;
 
                 $(".postingentry").append(postingHTML);

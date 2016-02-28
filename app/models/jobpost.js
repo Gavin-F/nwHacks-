@@ -15,17 +15,19 @@ var jobSchema = new Schema({
 });
 
 jobSchema.methods.getAvgCareerDevelopmentRating = function() {
-   UserReview.find({}, "careerDevelopmentRating", function(err, docs) {
-       //if (err) console.log(err);
-       //
-       //var count = 0;
-       //var sum = 0;
-       //for (var i=0; i<docs.length; i++) {
-       //    sum += docs[i];
-       //    count++;
-       //}
-       //return sum/count;
-       console.log(docs);
+   UserReview.find({jobPostID: this._id}, "careerDevelopmentRating", function(err, docs) {
+       if (err) console.log(err);
+
+       console.log("a review. " + docs);
+       var count = 0;
+       var sum = 0;
+       for (var i=0; i<docs.length; i++) {
+           console.log("loop number " + i);
+           sum += docs[i].careerDevelopmentRating;
+           count++;
+       }
+       return sum/count;
+       //console.log(docs);
    })
 };
 
