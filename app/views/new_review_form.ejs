@@ -97,6 +97,7 @@ You can put stuff here if you want
 <div class="container">
   <h2 color="gray"> Rate your co-op experience </h2>
   <br/>
+
   <form>
 
     <div class="form-group">
@@ -188,7 +189,7 @@ You can put stuff here if you want
 
   $(function() {
     $.ajax({
-      url: "/api/companies",
+      url: "api/companies",
       success: function(result2) {
         arrayofcompanies = result2;
         console.log(result2);
@@ -202,7 +203,7 @@ You can put stuff here if you want
 
   $(function() {
     $.ajax({
-      url: "/api/jobtitles",
+      url: "api/jobtitles",
       success: function(result) {
         arrayofjobs = result;
         console.log(result);
@@ -215,7 +216,7 @@ You can put stuff here if you want
 
   $(function() {
     $.ajax({
-      url: "/api/locations",
+      url: "api/locations",
       success: function(result3) {
         arrayoflocations = result3;
         console.log(result3);
