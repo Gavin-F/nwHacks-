@@ -22,11 +22,15 @@ router.get("/locations", function(req, res) {
 });
 
 router.get("/schools", function(req, res) {
-
+    JobPost.find().distinct("university", function(err, results) {
+        res.json(results);
+    })
 });
 
 router.get("/faculties", function(req, res) {
-
+    JobPost.find().distinct("faculty", function(err, result) {
+        res.json(results);
+    });
 });
 
 module.exports = router;
