@@ -1,4 +1,4 @@
-# nwHacks 2016 project
+# nwHacks 2016 project - No Coop Job
 
 George Gao
 Mathilde Ho
